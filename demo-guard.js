@@ -15,6 +15,7 @@
     'html::before,html::after,body::before,body::after{',
       'content:"', REP, '" !important;',
       'position:fixed !important;top:50% !important;left:50% !important;',
+      'right:auto !important;bottom:auto !important;',
       'width:300vmax !important;height:auto !important;',
       'margin:0 !important;padding:0 !important;',
       'display:block !important;visibility:visible !important;opacity:.13 !important;',
@@ -30,10 +31,10 @@
       'mix-blend-mode:screen !important;text-shadow:none !important;',
       'clip-path:none !important;filter:none !important;',
     '}',
-    'html::before{transform:translate(-50%,-50%) rotate(-45deg) translate(0,-45vmax) !important}',
-    'html::after{transform:translate(-50%,-50%) rotate(-45deg) translate(0,-15vmax) !important}',
-    'body::before{transform:translate(-50%,-50%) rotate(-45deg) translate(0,15vmax) !important}',
-    'body::after{transform:translate(-50%,-50%) rotate(-45deg) translate(0,45vmax) !important}'
+    'html::before{transform:translate(-50%,-50%) rotate(-45deg) translate(0,-34vmax) !important}',
+    'html::after{transform:translate(-50%,-50%) rotate(-45deg) translate(0,-11vmax) !important}',
+    'body::before{transform:translate(-50%,-50%) rotate(-45deg) translate(0,11vmax) !important}',
+    'body::after{transform:translate(-50%,-50%) rotate(-45deg) translate(0,34vmax) !important}'
   ].join('');
 
   var styleEl = null;
