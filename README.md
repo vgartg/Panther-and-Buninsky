@@ -1,12 +1,17 @@
-<<<<<<< HEAD
-# Pantera · Buninskiye Luga
+# Pantera & Buninskiye Luga
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/License-MIT-C0A074.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A pet project — a single-page promo site for the "Pantera" dance atelier (Moscow, Buninskiye Luga). Pure static HTML / CSS / vanilla JS, no build step, no framework. The repository is structured as a clean separation of concerns: every section has its own HTML partial, every visual area has its own CSS file, every interactive piece has its own JS file
+
+---
+
+<img width="1903" height="923" alt="image" src="https://github.com/user-attachments/assets/210d53fd-ad1e-4f36-9cbe-b664ddf62716" />
+
+---
 
 ## Features
 
