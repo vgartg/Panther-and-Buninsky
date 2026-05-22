@@ -1,0 +1,18 @@
+/* Call-to-action pills (used in nav, hero, pricing, trial) */
+.cta{
+  position:relative;display:inline-flex;align-items:center;gap:14px;
+  padding:14px 22px;
+  font-family:"Manrope",sans-serif;font-weight:400;font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--obsidian);
+  background:var(--gold);
+  border-radius:999px;
+  overflow:hidden;
+  transition:color .4s, background .4s;
+}
+.cta::before{content:"";position:absolute;inset:0;background:var(--paper);transform:translateY(101%);transition:transform .55s cubic-bezier(.2,.7,.2,1);z-index:0}
+.cta > *{position:relative;z-index:1}
+.cta:hover::before{transform:translateY(0)}
+.cta .arrow{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--obsidian);color:var(--gold-bright);font-size:11px}
+.cta.ghost{background:transparent;color:var(--paper);border:1px solid var(--rule-strong)}
+.cta.ghost::before{background:var(--gold)}
+.cta.ghost:hover{color:var(--obsidian)}

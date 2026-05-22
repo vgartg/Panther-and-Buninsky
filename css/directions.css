@@ -1,0 +1,31 @@
+.dir{background:linear-gradient(to bottom, var(--obsidian) 0%, var(--night) 60%, var(--obsidian) 100%)}
+.dir-head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:80px;border-bottom:1px solid var(--rule);padding-bottom:40px}
+.dir-head h2{font-size:clamp(48px, 7vw, 120px);line-height:.9;color:var(--paper)}
+.dir-head h2 .it{font-style:italic;color:var(--gold-bright)}
+.dir-head .meta{font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-align:right}
+@media (max-width: 820px){ .dir-head{ grid-template-columns:1fr } .dir-head .meta{ text-align:left } }
+
+.dir-list{display:flex;flex-direction:column;gap:0}
+.dir-item{
+  display:grid;grid-template-columns:80px 1.1fr 2fr 1fr auto;gap:40px;align-items:center;
+  padding:32px 0;border-bottom:1px solid var(--rule);
+  position:relative;transition:padding .5s cubic-bezier(.2,.7,.2,1);
+}
+.dir-item::before{
+  content:"";position:absolute;left:0;right:0;top:0;bottom:0;
+  background:linear-gradient(90deg, rgba(192,160,116,.04), rgba(192,160,116,0) 50%);
+  opacity:0;transition:opacity .55s;
+  pointer-events:none;
+}
+.dir-item:hover{padding-left:24px}
+.dir-item:hover::before{opacity:1}
+.dir-num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;color:var(--gold)}
+.dir-name{font-family:"Cormorant Garamond",serif;font-size:clamp(28px, 3.2vw, 48px);font-weight:300;color:var(--paper);line-height:1}
+.dir-name .it{font-style:italic;color:var(--gold-bright)}
+.dir-desc{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--bone);font-size:16px;line-height:1.45}
+.dir-age{font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.dir-arrow{width:46px;height:46px;border:1px solid var(--rule-strong);border-radius:50%;display:grid;place-items:center;transition:background .4s, color .4s, border-color .4s}
+.dir-item:hover .dir-arrow{background:var(--gold);color:var(--obsidian);border-color:var(--gold)}
+.dir-arrow svg{width:14px;height:14px;transition:transform .4s}
+.dir-item:hover .dir-arrow svg{transform:translate(2px,-2px)}
+@media (max-width: 1100px){ .dir-item{ grid-template-columns:50px 1fr auto; gap:20px } .dir-desc, .dir-age{ display:none } }

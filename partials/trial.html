@@ -1,0 +1,66 @@
+<section class="trial" id="trial">
+  <div class="wrap trial-inner">
+    <span class="corner tr">~ дом открыт ~</span>
+
+    <div class="reveal">
+      <span class="eyebrow"><span class="dot"></span>VII · Приглашение</span>
+      <h2>Гостевой<br>визит — <span class="it">в подарок.</span></h2>
+      <p>Оставьте имя и удобное направление. Мы пригласим вас на пробное занятие в студии Бунинских Лугов и подберём педагога под характер ребёнка или ваш темп.</p>
+
+      <div style="margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:520px">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>Адрес</div>
+          <div class="forum" style="font-size:18px;color:var(--paper);margin-top:8px;line-height:1.4">ЖК Бунинские Луга<br>Москва, ул. Александры&nbsp;Монаховой</div>
+        </div>
+        <div>
+          <div class="eyebrow"><span class="dot"></span>Связь</div>
+          <div class="forum" style="font-size:18px;color:var(--paper);margin-top:8px;line-height:1.4">+7 985 894&thinsp;57&thinsp;43<br><span style="color:var(--gold-bright)">@panteradance</span></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="book reveal" data-delay="1" onsubmit="event.preventDefault();this.querySelector('.submit span:first-child').textContent='Спасибо — мы свяжемся';this.querySelector('.submit').style.background='var(--paper)';">
+      <div>
+        <label>Кому записываем</label>
+        <input type="text" placeholder="Ваше имя и имя ребёнка" required />
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Телефон</label>
+          <input type="tel" placeholder="+7" required />
+        </div>
+        <div>
+          <label>Возраст</label>
+          <input type="text" placeholder="лет" />
+        </div>
+      </div>
+
+      <div>
+        <label>Направление</label>
+        <select>
+          <option>Подобрать педагога по характеру</option>
+          <option>Classique · Классика</option>
+          <option>Jazz-Modern &amp; Contemporary</option>
+          <option>Acting · Актёрское мастерство</option>
+          <option>Hip-Hop</option>
+          <option>Plastique · Партер</option>
+          <option>Rythmoplastique малышам</option>
+          <option>Adultes · Взрослая группа</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Удобное время</label>
+        <textarea placeholder="будни после 17:00 / суббота утром..."></textarea>
+      </div>
+
+      <button type="submit" class="cta submit">
+        <span>Зарезервировать визит</span>
+        <span class="arrow">↗</span>
+      </button>
+
+      <p class="legal">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных. Студия «Пантера» · ИНН 7700000000.</p>
+    </form>
+  </div>
+</section>

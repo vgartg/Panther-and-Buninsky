@@ -1,0 +1,15 @@
+/* Type families and base headings */
+.serif{font-family:"Cormorant Garamond",serif;font-weight:300}
+.forum{font-family:"Forum",serif;font-weight:400}
+.script{font-family:"Caveat",cursive}
+.eyebrow{
+  font-family:"Manrope",sans-serif;
+  font-weight:400;
+  font-size:11px;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.eyebrow .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);vertical-align:middle;margin:0 12px 3px 0}
+
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif;font-weight:300;letter-spacing:-.005em;color:var(--paper)}

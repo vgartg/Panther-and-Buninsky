@@ -1,0 +1,8 @@
+.rule{height:1px;background:var(--rule);margin:0}
+.gold{color:var(--gold-bright)}
+.line-vert{width:1px;height:60px;background:var(--gold);margin:30px auto}
+
+::selection{background:var(--gold);color:var(--obsidian)}
+
+/* Scroll-tied parallax helper class via JS */
+.parallax{will-change:transform}

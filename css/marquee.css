@@ -1,0 +1,9 @@
+.marquee{
+  padding:24px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  overflow:hidden;display:flex;gap:60px;
+  background:var(--night);
+}
+.marquee-track{display:flex;gap:60px;animation:scroll 38s linear infinite;flex-shrink:0;padding-right:60px}
+.marquee span{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(28px, 4vw, 56px);color:var(--bone);white-space:nowrap}
+.marquee span::after{content:"✦";display:inline-block;margin-left:60px;color:var(--gold);font-style:normal;font-size:.5em;transform:translateY(-.3em)}
+@keyframes scroll{to{transform:translateX(-50%)}}

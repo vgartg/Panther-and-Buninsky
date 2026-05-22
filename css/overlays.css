@@ -1,0 +1,17 @@
+/* Theatrical noise & vignette overlays */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:50;
+  background:
+    radial-gradient(120% 80% at 50% 0%, transparent 55%, rgba(0,0,0,.55) 100%),
+    radial-gradient(120% 80% at 50% 100%, transparent 55%, rgba(0,0,0,.45) 100%);
+}
+body::after{
+  content:"";position:fixed;inset:-50%;pointer-events:none;z-index:51;opacity:.06;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode:overlay;
+}
+
+/* Light leaks */
+.leak{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;opacity:.35;mix-blend-mode:screen}
+.leak.l1{width:520px;height:520px;background:radial-gradient(circle, rgba(192,160,116,.45), transparent 60%);top:-160px;right:-120px}
+.leak.l2{width:640px;height:640px;background:radial-gradient(circle, rgba(74,20,23,.55), transparent 60%);bottom:-260px;left:-200px;opacity:.4}

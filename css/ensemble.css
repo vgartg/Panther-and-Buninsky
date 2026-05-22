@@ -1,0 +1,32 @@
+.ens-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:80px;border-bottom:1px solid var(--rule);padding-bottom:36px}
+.ens-head h2{font-size:clamp(48px, 6vw, 96px);line-height:.95;color:var(--paper)}
+.ens-head h2 .it{font-style:italic;color:var(--gold-bright)}
+.ens-head .right{text-align:right}
+.ens-head .script{color:var(--gold-bright);font-size:22px}
+
+.ens-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.master{position:relative}
+.master .frame{
+  aspect-ratio:3/4;border:1px solid var(--rule);background:linear-gradient(160deg, var(--smoke), var(--char));
+  display:grid;place-items:center;overflow:hidden;position:relative;
+  transition:border-color .55s;
+}
+.master:hover .frame{border-color:var(--gold)}
+.master .frame::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(80% 60% at 50% 100%, rgba(11,9,7,.85), transparent 70%);
+}
+.master .silhouette{width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 30%, var(--gold) 0%, transparent 60%);opacity:.25;filter:blur(8px)}
+.master .initials{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:300;font-size:140px;color:var(--gold-bright);opacity:.9;letter-spacing:-.04em;
+  text-shadow:0 8px 40px rgba(0,0,0,.5);
+}
+.master .badge{position:absolute;top:18px;left:18px;font-family:"Manrope",sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);border:1px solid var(--rule-strong);padding:6px 10px;border-radius:999px;background:rgba(11,9,7,.6)}
+.master .num{position:absolute;top:18px;right:18px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;color:var(--gold)}
+.master h3{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:32px;line-height:1.05;margin-top:26px;color:var(--paper)}
+.master h3 .it{font-style:italic;color:var(--gold-bright)}
+.master .role{margin-top:6px;font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.master p{margin-top:14px;font-family:"Cormorant Garamond",serif;font-size:15px;line-height:1.55;color:var(--bone)}
+@media (max-width: 1100px){ .ens-grid{ grid-template-columns:1fr 1fr } }
+@media (max-width: 720px){ .ens-grid{ grid-template-columns:1fr } }

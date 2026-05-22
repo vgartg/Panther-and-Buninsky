@@ -1,0 +1,58 @@
+/* === BEGIN DEMO WATERMARK (vgartg.ru) === */
+/* Demo watermark — diagonal "vgartg.ru" ribbons.
+   Tamper-resistant: pseudo-elements on html+body cannot be deleted via the
+   Elements panel. Paired with js/demo-guard.js which re-injects styles on
+   override attempts. Strip via the `demo-watermark-remove` skill, or by
+   removing this file + js/demo-guard.js + the matching <link>/<script>
+   tags in index.html. */
+
+html::before, html::after,
+body::before, body::after{
+  content: "vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru · vgartg.ru" !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 300vmax !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: .13 !important;
+  text-align: center !important;
+  font-family: "Unbounded", "Onest", system-ui, sans-serif !important;
+  font-weight: 800 !important;
+  font-size: clamp(26px, 2.8vmax, 44px) !important;
+  line-height: 1 !important;
+  letter-spacing: .35em !important;
+  text-transform: lowercase !important;
+  color: #FFE9A8 !important;
+  background: transparent !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  z-index: 2147483646 !important;
+  transform-origin: center center !important;
+  mix-blend-mode: screen !important;
+  text-shadow: none !important;
+  clip-path: none !important;
+  filter: none !important;
+}
+
+html::before{ transform: translate(-50%, -50%) rotate(-45deg) translate(0, -34vmax) !important; }
+html::after { transform: translate(-50%, -50%) rotate(-45deg) translate(0, -11vmax) !important; }
+body::before{ transform: translate(-50%, -50%) rotate(-45deg) translate(0,  11vmax) !important; }
+body::after { transform: translate(-50%, -50%) rotate(-45deg) translate(0,  34vmax) !important; }
+
+@media print{
+  html::before, html::after, body::before, body::after{
+    opacity: .35 !important;
+    color: #FFD24A !important;
+    mix-blend-mode: normal !important;
+  }
+}
+/* === END DEMO WATERMARK === */
